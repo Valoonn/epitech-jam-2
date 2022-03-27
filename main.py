@@ -243,7 +243,6 @@ class Game:
                 self.running = False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 mouse_pos = pygame.mouse.get_pos()
-                print(mouse_pos)
 
 
                 if (self.restartLogoRect.collidepoint(mouse_pos)):
