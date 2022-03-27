@@ -120,4 +120,3 @@ class Card:
             screen.blit(self.nameText, self.nameRect)
         else:
             screen.blit(self.backImage, self.cardRect)
-            screen.blit(self.perImage, self.persRect)

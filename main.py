@@ -1,7 +1,6 @@
 from math import fabs
 import pygame, random, enum
 import os
-from src.player import Player
 from src.Card import Card
 
 ASSETS_PATH = "./assets/"
