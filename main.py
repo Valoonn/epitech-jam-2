@@ -302,13 +302,13 @@ class Game:
                                 card.isFront = not card.isFront
                             break
                 if (self.gameState == GameState.LOOSE) and self.card_list[0].cardRect.collidepoint(mouse_pos):
-                    self.restart()
+                    self.restart(self.changeDifficultyInt)
                 if (self.gameState == GameState.WIN):
                     for line in self.winCard:
                         for pair in line:
                             for card in pair:
                                 if card.cardRect.collidepoint(mouse_pos):
-                                    self.restart()
+                                    self.restart(self.changeDifficultyInt)
                                     break
 
     def update(self):
